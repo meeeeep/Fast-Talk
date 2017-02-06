@@ -18,7 +18,7 @@ myApp.component('login', {
                     .then((response) => {
                     console.log('login response:', response);
                 // Logged in, redirect to stories
-                $state.go('usersLanding');
+                $state.go('userslanding');
             })
             .catch(err => {
                     this.errors.login = err.message;

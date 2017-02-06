@@ -17,7 +17,7 @@ myApp.component('signup', {
                         password: this.user.password
                     })
                         .then(() => {
-                        // Account created, redirect story index
+                        // Account created, redirect to index
                         $state.go('userslanding');
             })
             .catch(err => {

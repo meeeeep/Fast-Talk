@@ -4,7 +4,7 @@ var PhraseSchema = new mongoose.Schema({
 
 english:     {type: String },
 translation: {type: String},
-    user: { type: mongoose.Schema.Types.ObjectId, ref:'User'} //added in user for passport and mongoose to use to match users
+user: { type: mongoose.Schema.Types.ObjectId, ref:'User'} //added in user for passport and mongoose to use to match users
 });
 
 

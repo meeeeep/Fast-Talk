@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var passport = require('passport');
 var User = require('../models/user');
-var request = require('request');
 var bodyParser = require('body-parser');
 var User= require('../models/user');
 

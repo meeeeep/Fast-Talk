@@ -22,4 +22,10 @@ myApp.config(function($stateProvider, $urlRouterProvider){
             url: '/signup',
             template:'<signup></signup>'
         })
+
+   //users landing page view
+        .state('userslanding',{
+            url: '/userslanding',
+            template:'<userslanding></userslanding>'
+        })
 })

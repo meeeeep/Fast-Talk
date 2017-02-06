@@ -14,7 +14,8 @@ function makeError(res, message, status) {
 //INDEX
 //GET ALL THE PHRASES
 
-router.get('/', function(req, res){
+router.get('/', function(req, res, next){
+    console.log('about to find some phrases');
     var query = req.query.search;
     var url = 'https://translation.googleapis.com/language/translate/v2?key=AIzaSyDLQPyziRb5KhTY51bVagqb5nsLA0DN2TA&target=es&q=' + query;
     request(url, function(error, response, body){

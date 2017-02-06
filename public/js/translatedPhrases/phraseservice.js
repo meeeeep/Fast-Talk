@@ -11,17 +11,17 @@ myApp.service('phraseService', function($http){
     };
 
     // Create a new phrase
-    this.create = function(story) {
+    this.create = function(phrase) {
         return $http.post('/api/phrases', phrase);
     };
 
     // Edit a single phrase by ID
-    this.update = function(story) {
+    this.update = function(phrase) {
         return $http.put('/api/phrases/' + phrase._id, phrase);
     };
 
     // Delete a phrase by ID
-    this.delete = function(story) {
+    this.delete = function(phrase) {
         console.log('we are deleting something');
         return $http.delete('/api/phrases/' + phrase._id);
     };

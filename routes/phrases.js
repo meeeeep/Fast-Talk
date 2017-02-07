@@ -12,9 +12,30 @@ function makeError(res, message, status) {
 }
 
 //INDEX
-//GET ALL THE PHRASES
 
-router.get('/', function(req, res, next){
+
+
+
+//NEW PHRASE
+router.post('/', function (req, res, next){
+    console.log('hello from post router');
+    var phrase = new Phrase({
+        english: req.body.english,
+        spanish: req.body.spanish,
+        user: req.user
+    });
+    phrase.save()
+        .then(function (savedPhrase) {
+            console.log(savedPhrase);
+            console.log(phrase);
+
+        })
+})
+
+
+//GET API DATA
+
+router.get('/', function(req, res){
     console.log('about to find some phrases');
     var query = req.query.search;
     var url = 'https://translation.googleapis.com/language/translate/v2?key=AIzaSyDLQPyziRb5KhTY51bVagqb5nsLA0DN2TA&target=es&q=' + query;
@@ -27,7 +48,8 @@ router.get('/', function(req, res, next){
                     //Things worked!
                     var parsedData = JSON.parse(body); //converting string into an object
                     // console.log(body);
-                    console.log(parsedData.data.translations[0].translatedText);
+                    var translation = (parsedData.data.translations[0].translatedText);
+                    res.json(translation);
                 }
             }
         });

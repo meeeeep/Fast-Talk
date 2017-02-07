@@ -2,11 +2,11 @@ myApp.service('phraseService', function($http){
 
     // Get all of the phrases
     this.getPhrases = function() {
-        return $http.get('/api/phrases');
+        return $http.get('/phrases');
     };
 
     // Get a single phrase by ID
-    this.getStory = function(id) {
+    this.getPhrase = function(id) {
         return $http.get('/api/phrases/' + id);
     };
 
@@ -26,3 +26,21 @@ myApp.service('phraseService', function($http){
         return $http.delete('/api/phrases/' + phrase._id);
     };
 });
+
+// this.getPhrases = function() {
+//
+//     var serviceData ={};
+//     $http({
+//         method: 'GET',
+//         url: '/phrases'
+//     }).then(function successCallback(response) {
+//         serviceData = response.data
+//         console.log(serviceData)
+//
+//     }, function errorCallback(response) {
+//         // called asynchronously if an error occurs
+//         // or server returns response with an error status.
+//         console.log(response)
+//     });
+//     return serviceData;
+// };

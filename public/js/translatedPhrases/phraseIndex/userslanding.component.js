@@ -9,8 +9,8 @@ myApp.component('userslanding', {
             phraseService.getPhrases()
                 .then( res => {
                 this.phrases = res.data;
-            console.log("This is your translator " + res.data);
-            // console.log(this.phrases);
+            // console.log("This is your translator " + res.data);
+            console.log(this.phrases);
 
         })
 

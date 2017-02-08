@@ -5,11 +5,17 @@ myApp.service('phraseService', function($http) {
         return $http.get('/phrases');
     };
 
-    //Create a new Phrase
-    this.create= function (phrases) {
+    //save a new Phrase
+    this.setPhrase= function (phrase) {
         return $http.post('/phrases', phrase);
 
     };
+
+    //edit a new Phrase
+    this.editPhrase = function (phrase) {
+        return $http.put('phrases' + phrase._id, phrase);
+    }
+
 });
 
 

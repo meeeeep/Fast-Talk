@@ -15,6 +15,15 @@ myApp.component('userslanding', {
         })
 
         };
+        this.setPhrases = function(){
+            phraseService.setPhrase(this.phrase)
+                .then(res => {
+                    $state.go('phraseShow',{id: res.data._id});
+            console.log("Button was clicked");
+
+                });
+
+        };
 
         // this.getPhrases = function () {
         //     console.log("You are hiiting me");

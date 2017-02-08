@@ -55,20 +55,42 @@ router.get('/', function(req, res){
         });
 });
 
-router.post('/', function(req, res){
+//save a phrase
+
+router.post('/', function(req, res, next){
     console.log('about to post from routes');
     var phrase = new Phrase({
         english: req.body.english,
-        spanish: req.body.spanish
+        english: req.body.english,
+        user: req.user
     });
     phrase.save()
         .then(function(savedPhrase){
             console.log(savedPhrase);
             res.json(phrase);
         })
+        .catch(function(err){
+            return next(err);
+        });
+});
 
-})
 
+
+// UPDATE
+router.put('/:id', function(req, res, next) {
+    Phrase.findById(req.params.id)
+        .then(function(phrase) {
+            if (!phrase) return next(makeError(res, 'Document not found', 404));
+            phrase.english = req.body.english;
+
+            return phrase.save();
+        })
+        .then(function(phrase) {
+            res.json(phrase);
+        }, function(err) {
+            return next(err);
+        });
+});
 
 
     //DELETE

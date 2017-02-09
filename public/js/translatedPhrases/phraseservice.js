@@ -26,6 +26,13 @@ myApp.service('phraseService', function($http) {
     this.update = function (phrase) {
         return $http.put('/phrases/' + phrase._id, phrase);
     };
+
+    //deleting a phrase
+
+    this.delete = function(phrase) {
+        console.log ('we are deleting something');
+        return $http.delete('/phrases/' + phrase._id);
+    }
 });
 
 

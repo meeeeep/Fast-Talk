@@ -2,7 +2,7 @@
 <ul>
     <li class="card-panel"  id='allPhrases' ng-repeat="phrase in $ctrl.savedPhrases">Spanish Phrase: {{phrase.spanish}}
         <button ng-click="$ctrl.editPhrases(phrase)">EDIT</button>
-        <button ng-click="$ctrl.editPhrases(phrase)">DELETE</button>
+        <button ng-click="$ctrl.delete(phrase)">DELETE</button>
 
     </li>
 </ul>

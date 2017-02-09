@@ -17,6 +17,16 @@ myApp.component('phraseShow', {
              $state.go('phraseEdit', {id: phrase._id});
         };
 
+        this.delete = function (phrase) {
+            console.log(' deleting phrases', phrase);
+            phraseService.delete(phrase)
+            .then(res => {
+                this.getSavedPhrases();
+                $state.go('phraseShow');
+            });
+
+        };
+
         this.getSavedPhrases();
     }
 });

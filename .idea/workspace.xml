@@ -4,8 +4,9 @@
     <list default="true" id="7d63befd-47a6-4002-baa7-3fbe68330834" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/translatedPhrases/phraseEdit/phraseEdit.component.js" afterPath="$PROJECT_DIR$/public/js/translatedPhrases/phraseEdit/phraseEdit.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/translatedPhrases/phraseEdit/phraseEdit.html" afterPath="$PROJECT_DIR$/public/js/translatedPhrases/phraseEdit/phraseEdit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.component.js" afterPath="$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.html" afterPath="$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/translatedPhrases/phraseservice.js" afterPath="$PROJECT_DIR$/public/js/translatedPhrases/phraseservice.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phrases.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="phrases.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/phrases.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="89" column="19" lean-forward="false" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+            <state relative-caret-position="284">
+              <caret line="86" column="31" lean-forward="false" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -59,18 +60,18 @@
       <file leaf-file-name="phraseservice.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseservice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+            <state relative-caret-position="252">
+              <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phraseShow.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="phraseShow.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,8 +80,8 @@
       <file leaf-file-name="phraseEdit.component.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseEdit/phraseEdit.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="135">
+              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -89,8 +90,8 @@
       <file leaf-file-name="phraseShow.component.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="285">
+              <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -122,6 +123,7 @@
     <findStrings>
       <find>$ctrl</find>
       <find>editPhrases</find>
+      <find>update</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,12 +161,12 @@
         <option value="$PROJECT_DIR$/views/layout.pug" />
         <option value="$PROJECT_DIR$/public/js/translatedPhrases/phraseIndex/userslanding.html" />
         <option value="$PROJECT_DIR$/public/js/translatedPhrases/phraseIndex/userslanding.component.js" />
-        <option value="$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.component.js" />
-        <option value="$PROJECT_DIR$/routes/phrases.js" />
-        <option value="$PROJECT_DIR$/public/js/translatedPhrases/phraseservice.js" />
         <option value="$PROJECT_DIR$/public/js/translatedPhrases/phraseEdit/phraseEdit.html" />
-        <option value="$PROJECT_DIR$/public/js/translatedPhrases/phraseEdit/phraseEdit.component.js" />
         <option value="$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.html" />
+        <option value="$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.component.js" />
+        <option value="$PROJECT_DIR$/public/js/translatedPhrases/phraseservice.js" />
+        <option value="$PROJECT_DIR$/public/js/translatedPhrases/phraseEdit/phraseEdit.component.js" />
+        <option value="$PROJECT_DIR$/routes/phrases.js" />
       </list>
     </option>
   </component>
@@ -180,8 +182,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
-    <option name="y" value="67" />
+    <option name="x" value="37" />
+    <option name="y" value="23" />
     <option name="width" value="1274" />
     <option name="height" value="733" />
   </component>
@@ -479,11 +481,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89976000" />
+    <option name="totallyTimeSpent" value="91744000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="67" width="1274" height="733" extended-state="0" />
-    <editor active="false" />
+    <frame x="37" y="23" width="1274" height="733" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2511774" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -862,22 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseservice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseIndex/userslanding.component.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -902,26 +888,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseservice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseEdit/phraseEdit.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="135">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/phrases.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="89" column="19" lean-forward="false" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/translatedPhrases/phraseShow/phraseShow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        <state relative-caret-position="284">
+          <caret line="86" column="31" lean-forward="false" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
           <folding />
         </state>
       </provider>

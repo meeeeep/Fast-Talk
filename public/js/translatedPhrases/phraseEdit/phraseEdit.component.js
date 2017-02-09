@@ -1,7 +1,7 @@
 myApp.component('phraseEdit', {
     templateUrl: '/js/translatedPhrases/phraseEdit/phraseEdit.html',
     controller: function(phraseService, $state, $stateParams) {
-        this.phrase = null;
+        this.phrase = {};
 
         this.save = function() {
             console.log('hello');

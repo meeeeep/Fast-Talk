@@ -3,14 +3,17 @@ myApp.component('phraseEdit', {
     controller: function(phraseService, $state, $stateParams) {
         this.phrase = null;
 
-        this.save = function (){
-            console.log('hello')
+        this.save = function() {
+            console.log('hello');
             phraseService.update(this.phrase)
-                .then(res => {
-                    $state.go('phraseShow', { id: phrase._id});
-            })
+                .then( res => {
+                    $state.go('phraseShow', { id: this.phrase._id});
+            });
         };
-
+phraseService.editPhrases($stateParams.id)
+    .then( res => {
+        this.phrase = res.data;
+});
 
         // this.save = function () {
         //

@@ -1,6 +1,6 @@
 myApp.service('phraseService', function($http) {
 
-// Get a single story by ID
+// Get to Data Base api
     this.getPhrases = function(phrase) {
         return $http.get('/phrases/' + phrase);
     };
@@ -12,17 +12,22 @@ myApp.service('phraseService', function($http) {
     };
 
     //get all users stories
-    this.getUserPhrases = function(){
-    return $http.get('/phrases')
+    this.getSavedPhrases = function(){
+        return $http.get('/phrases');
+    };
+
+    //get 1 phrase
+
+    this.editPhrases = function(id){
+        return $http.get("/phrases/" + id);
+    };
+
+    //edit a new Phrase
+    this.update = function (phrase) {
+        return $http.put('/phrases/' + phrase._id, phrase);
     };
 });
 
-//     //edit a new Phrase
-//     this.editPhrase = function (phrase) {
-//         return $http.put('phrases' + phrase._id, phrase);
-//     }
-//
-// });
 
 
     // // Get all of the phrases

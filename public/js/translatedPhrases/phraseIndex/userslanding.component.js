@@ -17,10 +17,11 @@ myApp.component('userslanding', {
         this.setPhrases = () => {
             phraseService.setPhrase(this.phrase)
             .then(res => {
-                $state.go('phraseShow',{id: res.data._id});
+                $state.go('phraseShow');
                 console.log("Button was clicked");
             });
         };
+
 
         // this.getPhrases = function () {
         //     console.log("You are hiiting me");

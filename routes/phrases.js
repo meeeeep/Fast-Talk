@@ -68,7 +68,19 @@ router.get('/', function(req, res, next){
         });
 });
 
+// Returning data for single phrase as json
 
+router.get('/:id', function(req, res, next){
+    Phrase.findById(req.params.id)
+        .then(function(phrase){
+            if(!phrase) return next(makeError(res, 'Document not found', 404));
+            res.json(phrase);
+        })
+        .catch(function (err) {
+            return next(err);
+
+        });
+});
 
 // UPDATE
 router.put('/:id', function(req, res, next) {
@@ -76,6 +88,7 @@ router.put('/:id', function(req, res, next) {
         .then(function(phrase) {
             if (!phrase) return next(makeError(res, 'Document not found', 404));
             phrase.english = req.body.english;
+            phrase.spanish = req.body.spanish;
 
             return phrase.save();
         })

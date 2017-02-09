@@ -1,12 +1,12 @@
 
 <hl>Welcome to user landing page</h1>
-    <form  >
+    <form>
         <input name="english" type="text" id="englishT" ng-model="$ctrl.phrase.english" placeholder="Text to translate"/>
     </form>
     <button ng-click="$ctrl.getPhrases()" value="Save">Submit</button>
 
 <div id="text" class="text">
-    {{$ctrl.phrase.english}}
+    {{$ctrl.phrase.spanish}}
 
     <button ng-click="$ctrl.setPhrases()">SAVE</button>
     <button ng-click="$ctrl.editPhrases()">EDIT</button>

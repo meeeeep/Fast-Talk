@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var PhraseSchema = new mongoose.Schema({
 
 english:     {type: String },
-english: {type: String},
+spanish: {type: String},
 user: { type: mongoose.Schema.Types.ObjectId, ref:'User'} //added in user for passport and mongoose to use to match users
 });
 

@@ -11,34 +11,14 @@ function makeError(res, message, status) {
     return error;
 }
 
-//INDEX
-
-
-
-
-//NEW PHRASE
-// router.post('/', function (req, res, next){
-//     console.log('hello from post router');
-//     var phrase = new Phrase({
-//         english: req.body.english,
-//         spanish: req.body.spanish,
-//         user: req.user
-//     });
-//     phrase.save()
-//         .then(function (savedPhrase) {
-//             console.log(savedPhrase);
-//             console.log(phrase);
-//
-//         })
-// })
-
 
 //GET API DATA
 
-router.get('/', function(req, res){
+router.get('/:query', function(req, res){
     console.log('about to find some phrases');
-    var query = req.data;
+    var query = req.params.query;
     var url = 'https://translation.googleapis.com/language/translate/v2?key=AIzaSyDLQPyziRb5KhTY51bVagqb5nsLA0DN2TA&target=es&q=' + query;
+    console.log('url:', url);
     request(url, function(error, response, body){
             if(error){
                 console.log("Something went wrong!");
@@ -61,7 +41,7 @@ router.post('/', function(req, res, next){
     console.log('about to post from routes');
     var phrase = new Phrase({
         english: req.body.english,
-        english: req.body.english,
+        spanish: req.body.spanish,
         user: req.user
     });
     phrase.save()
@@ -71,6 +51,20 @@ router.post('/', function(req, res, next){
         })
         .catch(function(err){
             return next(err);
+        });
+});
+
+//get all phrases
+router.get('/', function(req, res, next){
+    console.log( 'about to get all users phrases')
+    Phrase.find()
+        .then(function (phrases) {
+            res.json(phrases);
+
+        })
+        .catch(function (err) {
+            return next(err);
+
         });
 });
 

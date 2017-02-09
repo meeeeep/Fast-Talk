@@ -5,7 +5,7 @@ myApp.component('phraseEdit', {
 
         this.save = function() {
             console.log('hello');
-            phraseService.update(this.phrase)
+            phraseService.update($stateParams.id)
                 .then( res => {
                     $state.go('phraseShow', { id: this.phrase._id});
             });

@@ -1,7 +1,9 @@
 html
   head
     title FastTalk
+    link(rel='stylesheet', type="text/css"   href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css")
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Pangolin')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body(ng-app ='fastTalk')
     ui-view
@@ -18,3 +20,4 @@ html
     script(src='js/translatedPhrases/phraseservice.js')
     script(src='js/translatedPhrases/phraseShow/phraseShow.component.js')
     script(src='js/translatedPhrases/phraseEdit/phraseEdit.component.js')
+    script(src='js/navbar/navbar.js')

@@ -57,8 +57,9 @@ router.post('/', function(req, res, next){
 //get all phrases
 router.get('/', function(req, res, next){
     console.log( 'about to get all users phrases')
-    Phrase.find()
+    Phrase.find({user: req.user})
         .then(function (phrases) {
+            phrases && phrases.user && phrases.user.equals(req.user._id);
             res.json(phrases);
 
         })

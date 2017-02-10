@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  /*padding: 50px;*/
 }
 
 a {
@@ -8,6 +8,11 @@ a {
 
 #buttons{
   text-align: center;
+}
+
+#welcomeb{
+  background-color: #F7DC6F;
+  padding: 50px;
 }
 
 #welcomep{
@@ -24,10 +29,14 @@ a {
 }
 
 #wbutton1{
+  color: black;
+  background-color: #26C6DA;
   font-family: 'Chewy', cursive;
 }
 
 #wbutton2{
+  color: black;
+  background-color: #26C6DA;
   font-family: 'Chewy', cursive;
 }
 
@@ -38,7 +47,9 @@ a {
 #loginF{
   text-align: center;
 }
-.loginJ{
+h1.loginJ{
+  padding: 100px 0px 0px 100px;
+  background-color: #F7DC6F;
   text-align: center;
   font-family: 'Chewy', cursive;
 
@@ -50,6 +61,8 @@ a {
 }
 
 .signupJ{
+  padding-top: 100px;
+  background-color: #F7DC6F;
   text-align: center;
   font-family: 'Chewy', cursive;
 }
@@ -60,11 +73,13 @@ a {
 }
 
 #loginbutton{
+  background-color: #26C6DA;
   text-align: center;
   font-family: 'Chewy', cursive;
 }
 
 #signupbutton{
+  background-color: #26C6DA;
   text-align: center;
   font-family: 'Chewy', cursive;
 }
@@ -119,32 +134,34 @@ text-align: center;
   font-family: 'Chewy', cursive;
 }
 
-#save{
+.ui.button#save{
+  background-color: #26C6DA;
   font-family: 'Chewy', cursive;
+  color: black;
 }
 
-#submit{
+.ui.button#submit{
+  background-color: #26C6DA;
   font-family: 'Chewy', cursive;
+  color: black;
 }
+
 
 #userinfo{
   font-family: 'Chewy', cursive;
 }
 
-#1{
+nav#nav-wrapper a {
+  color: black;
   font-family: 'Chewy', cursive;
-}
 
-#2{
-  font-family: 'Chewy', cursive;
-}
-
-#3{
-  font-family: 'Chewy', cursive;
 }
 
 #nav-mobile{
   font-family: 'Chewy', cursive;
+}
+nav#nav-wrapper{
+  background-color: #F7DC6F;
 }
 
 #translateInput{
@@ -183,4 +200,8 @@ text-align: center;
 
 #icon2{
   margin-right: 10px;
+}
+
+nav.#userinfo{
+  color:#26C6DA;
 }

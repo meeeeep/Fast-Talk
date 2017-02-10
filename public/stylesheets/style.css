@@ -150,3 +150,37 @@ text-align: center;
 #translateInput{
   padding: 20px 0px 20px 10px;
 }
+
+#loginI{
+  display: flex;
+  justify-content: center;
+}
+
+#loginIn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+#icon1{
+  margin-right: 10px;
+}
+
+#signupI{
+  display: flex;
+  justify-content: center;
+}
+
+#signupIn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+#icon2{
+  margin-right: 10px;
+}

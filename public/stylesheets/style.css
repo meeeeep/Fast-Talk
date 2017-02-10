@@ -53,3 +53,27 @@ a {
 .signupP{
   text-align: center;
 }
+
+#userSave{
+  float: right;
+}
+
+#input3 {
+  padding-right: 20px;
+}
+
+.etext1{
+  text-align: center;
+}
+
+.etext2{
+text-align: center;
+}
+
+.stext1{
+text-align: center;
+}
+
+.stext2{
+text-align: center;
+}

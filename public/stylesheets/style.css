@@ -7,3 +7,49 @@ a {
   color: #00B7FF;
 }
 
+#buttons{
+  text-align: center;
+}
+
+#welcomep{
+  text-align: center;
+}
+
+#jumbotron{
+  text-align: center;
+}
+
+#bar{
+  text-align: center;
+}
+
+#loginF{
+  text-align: center;
+}
+.loginJ{
+  text-align: center;
+}
+
+.loginp{
+  text-align: center;
+}
+
+.signupJ{
+  text-align: center;
+}
+
+#signupF{
+  text-align: center;
+}
+
+#loginbutton{
+  text-align: center;
+}
+
+#signupbutton{
+  text-align: center;
+}
+
+.signupP{
+  text-align: center;
+}

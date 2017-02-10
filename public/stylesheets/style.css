@@ -1,8 +1,145 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+#buttons{
+  text-align: center;
+}
+
+#welcomep{
+  text-align: center;
+}
+
+#jumbotron{
+  font-family: 'Chewy', cursive;
+  text-align: center;
+}
+
+#welp{
+  font-family: 'Chewy', cursive;
+}
+
+#wbutton1{
+  font-family: 'Chewy', cursive;
+}
+
+#wbutton2{
+  font-family: 'Chewy', cursive;
+}
+
+#bar{
+  text-align: center;
+}
+
+#loginF{
+  text-align: center;
+}
+.loginJ{
+  text-align: center;
+  font-family: 'Chewy', cursive;
+
+}
+
+.loginp{
+  text-align: center;
+  font-family: 'Chewy', cursive;
+}
+
+.signupJ{
+  text-align: center;
+  font-family: 'Chewy', cursive;
+}
+
+#signupF{
+  text-align: center;
+  font-family: 'Chewy', cursive;
+}
+
+#loginbutton{
+  text-align: center;
+  font-family: 'Chewy', cursive;
+}
+
+#signupbutton{
+  text-align: center;
+  font-family: 'Chewy', cursive;
+}
+
+.signupP{
+  text-align: center;
+  font-family: 'Chewy', cursive;
+}
+
+#userSave{
+  float: right;
+  font-family: 'Chewy', cursive;
+}
+
+#input3 {
+  padding-right: 20px;
+}
+
+.etext1{
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+}
+
+.etext2{
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+}
+
+.stext1{
+text-align: center;
+  font-family: 'Caveat Brush', cursive;
+
+}
+
+.stext2{
+text-align: center;
+  font-family: 'Caveat Brush', cursive;
+}
+
+#myPJ{
+  font-family: 'Chewy', cursive;
+}
+
+#trans{
+  font-family: 'Chewy', cursive;
+}
+
+#trans2{
+  font-family: 'Chewy', cursive;
+}
+
+#save{
+  font-family: 'Chewy', cursive;
+}
+
+#submit{
+  font-family: 'Chewy', cursive;
+}
+
+#userinfo{
+  font-family: 'Chewy', cursive;
+}
+
+#1{
+  font-family: 'Chewy', cursive;
+}
+
+#2{
+  font-family: 'Chewy', cursive;
+}
+
+#3{
+  font-family: 'Chewy', cursive;
+}
+
+#nav-mobile{
+  font-family: 'Chewy', cursive;
 }

@@ -1,7 +1,41 @@
-<hl>Welcome to user landing page</h1>
-    <form ng-submit="$ctrl.save()" action="/">
-        <input name="english" type="text" id="englishT" ng-model="$ctrl.phrases.english" placeholder="Text to translate" name="search"/>
-    </form>
-    <button type="submit" value="Save">Submit</button>
 
-    <textarea ng-model="$ctrl.phrases.spanish" name="spanish"></textarea>
+    <navbar></navbar>
+<br>
+<br>
+<br>
+<div class="row">
+    <div class="ui massive equal width form">
+        <div class="two fields">
+        <div class="col s6">
+            <div class="field">
+                <label id="trans">Text to Translate</label>
+                <input placeholder="Text to translate"
+                       type="text"
+                       name="english"
+                       ng-model="$ctrl.phrase.english">
+                <button
+                        class="ui left floated button"
+                        ng-click="$ctrl.getPhrases()"
+                        value="save"
+                        id="submit">
+                    submit
+                </button>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="field">
+                <label id="trans2">Translated Text</label>
+                <input name="readonly" value="{{$ctrl.phrase.spanish}}" id="input3" readonly>
+               <div>
+                <button id="save"
+                        class="ui right floated button"
+                        ng-click="$ctrl.setPhrases()"
+                        >
+                    SAVE
+                </button>
+               </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

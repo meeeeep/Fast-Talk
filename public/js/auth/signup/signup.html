@@ -1,36 +1,45 @@
-<h1>This is signup</h1>
+<h1 class="signupJ">SIGN UP</h1>
 
-<form class="form" name="form" ng-submit="$ctrl.signup(form)" novalidate>
+<form class="form"
+      name="form"
+      id="signupF"
+      ng-submit="$ctrl.signup(form)"
+      novalidate>
 
     <div class="form-group">
         <label>Email</label>
 
-        <input type="email"
-               id="username"
-               name="username"
-               class="form-control"
-               placeholder="email"
-               ng-model="$ctrl.user.username"
+        <i class="tiny material-icons">email
+            <input type="email"
+                   id="username"
+                   name="username"
+                   class="form-control"
+                   ng-model="$ctrl.user.username"
                required />
+        </i>
     </div>
 
     <div class="form-group">
         <label>Password</label>
 
+        <i class="tiny material-icons">vpn_key
         <input type="password"
                id="password"
                name="password"
                class="form-control"
-               placeholder="email"
                ng-model="$ctrl.user.password"
                required />
+        </i>
     </div>
     <div>
-        <button class="btn btn-inverse btn-lg btn-login" type="submit">
-            signup
+        <br>
+        <br>
+        <button id="signupbutton" class="btn btn-inverse btn-lg btn-login" type="submit">
+            SUBMIT
         </button>
-        <a class="btn btn-default btn-lg btn-register" ui-sref="login">
-            Here
-        </a>
+
+        <br>
+        <br>
+        <p class="signupP" >Did you need to <a ui-sref="login">login</a> instead?</p>
     </div>
 </form>

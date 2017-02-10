@@ -1,38 +1,44 @@
-<h1>THIS IS LOGIN</h1>
+<h1 class="loginJ">LOGIN</h1>
 <form class="loginForm"
       name="loginForm"
+      id="loginF"
       ng-submit="$ctrl.login(loginForm)"
       novalidate>
 
     <div class="form-group">
         <label>Email</label>
 
-        <input type="email"
-               id="username"
-               placeholder="email"
-               name="username"
-               class="form-control"
-               ng-model="$ctrl.user.username"
+        <i class="tiny material-icons">email
+            <input type="email"
+                   id="username"
+                   name="username"
+                   class="form-control"
+                   ng-model="$ctrl.user.username"
                required />
+        </i>
     </div>
 
         <div class="form-group">
             <label>Password</label>
 
-            <input type="password"
-                   id="password"
-                   placeholder="password"
-                   name="password"
-                   class="form-control"
-                   ng-model="$ctrl.user.password"
+            <i class="tiny material-icons">vpn_key
+                <input type="password"
+                       id="password"
+                       placeholder="password"
+                       name="password"
+                       class="form-control"
+                       ng-model="$ctrl.user.password"
                    required />
+            </i>
         </div>
     <div>
-        <button class="btn btn-inverse btn-lg btn-login" type="submit">
-            Login
+        <br>
+        <br>
+        <button class="btn btn-inverse btn-lg btn-login"  id="loginbutton" type="submit">
+            SUBMIT
         </button>
-        <a class="btn btn-default btn-lg btn-register" ui-sref="signup">
-            Register
-        </a>
+        <br>
+        <br>
+        <p class="loginp">Did you want to <a ui-sref="signup">signup</a> instead?</p>
     </div>
 </form>

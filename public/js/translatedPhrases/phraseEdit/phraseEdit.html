@@ -1,0 +1,11 @@
+<hl>Welcome to user edit page</h1>
+    <form>
+        <input name="english" type="text" id="englishT" ng-model="$child.phrase.english" placeholder="Text to translate"/>
+    </form>
+    <button ng-click="$ctrl.save()" type="submit" value="Save">Submit</button>
+
+    <div id="text" class="text">
+        {{$ctrl.phrase.spanish}}
+
+    </div>
+

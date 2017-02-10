@@ -4,6 +4,7 @@ myApp.component('phraseNew',{
         this.phrase = {
             english : ''
         };
+
         this.save = function () {
             phraseService.create(this.phrase)
                 .then( res => {

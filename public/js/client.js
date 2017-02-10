@@ -26,24 +26,48 @@ myApp.config(function($stateProvider, $urlRouterProvider){
    //users landing page view and shows all users phrases
         .state('userslanding',{
             url: '/userslanding',
-            template:'<userslanding></userslanding>'
+            template:'<userslanding></userslanding>',
+            onEnter: function (Auth, $state) {
+                if (!Auth.isLoggedIn()){
+                    $state.go('index', {});
+                }
+
+            }
         })
 
     //Form to create a new phrase
         .state('phraseNew',{
             url: '/new',
-            template: '<new-phrase></new-phrase>'
+            template: '<new-phrase></new-phrase>',
+            onEnter: function (Auth, $state) {
+                if (!Auth.isLoggedIn()){
+                    $state.go('index', {});
+                }
+
+            }
         })
 
     // show a singular phrase
         .state('phraseShow', {
             url: '/show/:id',
-            template: '<phrase-show></phrase-show>'
+            template: '<phrase-show></phrase-show>',
+            onEnter: function (Auth, $state) {
+                if (!Auth.isLoggedIn()){
+                    $state.go('index', {});
+                }
+
+            }
         })
 
     //Edit a phrase
         .state('phraseEdit', {
             url: '/edit/:id',
-            template: '<phrase-edit></phrase-edit>'
+            template: '<phrase-edit></phrase-edit>',
+            onEnter: function (Auth, $state) {
+                if (!Auth.isLoggedIn()){
+                    $state.go('index', {});
+                }
+
+            }
         })
 })

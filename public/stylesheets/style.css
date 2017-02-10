@@ -81,6 +81,9 @@ a {
 
 #input3 {
   padding-right: 20px;
+  padding: 20px 0px 20px 10px;
+  width: 98%;
+
 }
 
 .etext1{
@@ -142,4 +145,8 @@ text-align: center;
 
 #nav-mobile{
   font-family: 'Chewy', cursive;
+}
+
+#translateInput{
+  padding: 20px 0px 20px 10px;
 }

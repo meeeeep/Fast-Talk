@@ -1,12 +1,11 @@
 
-<h1> SHOW ALL PHRASES</h1>
+<h1 id="myPJ"> MY PHRASES</h1>
 <navbar></navbar>
 <br>
 <br>
 <div class="ui three stackable cards">
     <div class="card"  id='allPhrases' ng-repeat="phrase in $ctrl.savedPhrases"><h3 class="etext1">English</h3><h4 class="etext2">{{phrase.english}}</h4>
         <h3 class="stext1">Spanish</h3><h4 class="stext2">{{phrase.spanish}}</h4>
-        <button ng-click="$ctrl.delete(phrase)">DELETE</button>
-
+        <button class="luid ui button" ng-click="$ctrl.delete(phrase)">DELETE</button>
     </div>
 </div>

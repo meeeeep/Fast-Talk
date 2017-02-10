@@ -1,5 +1,4 @@
 
-<h1>Welcome to user landing page</h1>
     <navbar></navbar>
 <br>
 <br>
@@ -9,13 +8,13 @@
         <div class="two fields">
         <div class="col s6">
             <div class="field">
-                <label>Text to Translate</label>
+                <label id="trans">Text to Translate</label>
                 <input placeholder="Text to translate"
                        type="text"
                        name="english"
                        ng-model="$ctrl.phrase.english">
                 <button
-                        class="btn-floating btn-large waves-effect waves-light"
+                        class="ui left floated button"
                         ng-click="$ctrl.getPhrases()"
                         value="save"
                         id="submit">
@@ -25,12 +24,13 @@
         </div>
         <div class="col s6">
             <div class="field">
-                <label>Translated Text</label>
+                <label id="trans2">Translated Text</label>
                 <input name="readonly" value="{{$ctrl.phrase.spanish}}" id="input3" readonly>
                <div>
-                <button class="btn-floating btn-large waves-effect waves-light"
+                <button id="save"
+                        class="ui right floated button"
                         ng-click="$ctrl.setPhrases()"
-                        id="userSave">
+                        >
                     SAVE
                 </button>
                </div>

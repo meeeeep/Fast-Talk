@@ -1,6 +1,5 @@
 body {
   padding: 50px;
-  font-family: 'Pangolin', cursive;
 }
 
 a {
@@ -16,7 +15,20 @@ a {
 }
 
 #jumbotron{
+  font-family: 'Chewy', cursive;
   text-align: center;
+}
+
+#welp{
+  font-family: 'Chewy', cursive;
+}
+
+#wbutton1{
+  font-family: 'Chewy', cursive;
+}
+
+#wbutton2{
+  font-family: 'Chewy', cursive;
 }
 
 #bar{
@@ -28,34 +40,43 @@ a {
 }
 .loginJ{
   text-align: center;
+  font-family: 'Chewy', cursive;
+
 }
 
 .loginp{
   text-align: center;
+  font-family: 'Chewy', cursive;
 }
 
 .signupJ{
   text-align: center;
+  font-family: 'Chewy', cursive;
 }
 
 #signupF{
   text-align: center;
+  font-family: 'Chewy', cursive;
 }
 
 #loginbutton{
   text-align: center;
+  font-family: 'Chewy', cursive;
 }
 
 #signupbutton{
   text-align: center;
+  font-family: 'Chewy', cursive;
 }
 
 .signupP{
   text-align: center;
+  font-family: 'Chewy', cursive;
 }
 
 #userSave{
   float: right;
+  font-family: 'Chewy', cursive;
 }
 
 #input3 {
@@ -64,16 +85,61 @@ a {
 
 .etext1{
   text-align: center;
+  font-family: 'Caveat Brush', cursive;
 }
 
 .etext2{
-text-align: center;
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
 }
 
 .stext1{
 text-align: center;
+  font-family: 'Caveat Brush', cursive;
+
 }
 
 .stext2{
 text-align: center;
+  font-family: 'Caveat Brush', cursive;
+}
+
+#myPJ{
+  font-family: 'Chewy', cursive;
+}
+
+#trans{
+  font-family: 'Chewy', cursive;
+}
+
+#trans2{
+  font-family: 'Chewy', cursive;
+}
+
+#save{
+  font-family: 'Chewy', cursive;
+}
+
+#submit{
+  font-family: 'Chewy', cursive;
+}
+
+#userinfo{
+  font-family: 'Chewy', cursive;
+}
+
+#1{
+  font-family: 'Chewy', cursive;
+}
+
+#2{
+  font-family: 'Chewy', cursive;
+}
+
+#3{
+  font-family: 'Chewy', cursive;
+}
+
+#nav-mobile{
+  font-family: 'Chewy', cursive;
 }

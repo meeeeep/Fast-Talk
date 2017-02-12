@@ -11,8 +11,8 @@ var LocalStrategy = require('passport-local');
 var passportLocalMongoose = require('passport-local-mongoose');
 var request= require('request');
 var User = require('./models/user');
-var database = 'mongodb://localhost:27017/fast_talk';
-var port = process.env.PORT || 8080;
+// var database = 'mongodb://localhost:27017/fast_talk';
+// var port = process.env.PORT || 8080;
 
 mongoose.Promise = require('bluebird');
 
@@ -25,32 +25,32 @@ var phrases = require('./routes/phrases');
 var app = express();
 
 // Connect to database
-mongoose.connect(database, function (err) {
-    if (err) {
-        console.log('Could not connect to Mongo Db');
-    } else {
-        console.log('connected to Mongo Db');
-    }
-});
-
-app.listen(port, function () {
-    console.log("server conneted on port: " + port)
-});
-
-// if (process.env.MONGODB_URI) {
-//     mongoose.connect(process.env.MONGODB_URI);
-// }
-// else {
-//     mongoose.connect('mongodb://localhost/');
-// }
-// mongoose.connection.on('error', function(err) {
-//         console.error('MongoDB connection error: ' + err);
-//         process.exit(-1);
+// mongoose.connect(database, function (err) {
+//     if (err) {
+//         console.log('Could not connect to Mongo Db');
+//     } else {
+//         console.log('connected to Mongo Db');
 //     }
-// );
-// mongoose.connection.once('open', function() {
-//     console.log("Mongoose has connected to MongoDB!");
 // });
+//
+// app.listen(port, function () {
+//     console.log("server conneted on port: " + port)
+// });
+
+if (process.env.MONGODB_URI) {
+    mongoose.connect(process.env.MONGODB_URI);
+}
+else {
+    mongoose.connect('mongodb://localhost/');
+}
+mongoose.connection.on('error', function(err) {
+        console.error('MongoDB connection error: ' + err);
+        process.exit(-1);
+    }
+);
+mongoose.connection.once('open', function() {
+    console.log("Mongoose has connected to MongoDB!");
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -17,7 +17,7 @@ function makeError(res, message, status) {
 router.get('/:query', function(req, res){
     console.log('about to find some phrases');
     var query = req.params.query;
-    var url = 'https://translation.googleapis.com/language/translate/v2?key=AIzaSyDLQPyziRb5KhTY51bVagqb5nsLA0DN2TA&target=es&q=' + query;
+    var url = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170211T052748Z.b9e840507c73f228.cc9dd3d3abb4b897d9a5d8aeda0830ef466c0733&lang=en-es&text=' + query;
     console.log('url:', url);
     request(url, function(error, response, body){
             if(error){
@@ -28,8 +28,11 @@ router.get('/:query', function(req, res){
                     //Things worked!
                     var parsedData = JSON.parse(body); //converting string into an object
                     // console.log(body);
-                    var translation = (parsedData.data.translations[0].translatedText);
-                    res.json(translation);
+                    // var translation = (parsedData.data.translations[0].translatedText);
+                    console.log(parsedData.code); 
+                    console.log(parsedData.text[0]); 
+                    res.json(parsedData.text[0]);
+                    // res.json(translation);
                 }
             }
         });

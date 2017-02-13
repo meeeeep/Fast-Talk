@@ -47,7 +47,7 @@ a {
 #loginF{
   text-align: center;
 }
-h1.loginJ{
+h1#loginJ{
   padding: 100px 0px 0px 100px;
   background-color: #F7DC6F;
   text-align: center;

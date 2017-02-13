@@ -14,7 +14,7 @@ var User = require('./models/user');
 // var database = 'mongodb://localhost:27017/fast_talk';
 // var port = process.env.PORT || 8080;
 
-mongoose.Promise = require('bluebird');
+// mongoose.Promise = require('bluebird');
 
 
 //ROUTES

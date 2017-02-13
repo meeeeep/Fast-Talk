@@ -29,13 +29,13 @@ a {
 }
 
 #wbutton1{
-  color: black;
+  color: white;
   background-color: #26C6DA;
   font-family: 'Chewy', cursive;
 }
 
 #wbutton2{
-  color: black;
+  color: white;
   background-color: #26C6DA;
   font-family: 'Chewy', cursive;
 }
@@ -104,6 +104,8 @@ h1#loginJ{
 .etext1{
   text-align: center;
   font-family: 'Caveat Brush', cursive;
+  color: #5f9ea0;
+
 }
 
 .etext2{
@@ -114,12 +116,20 @@ h1#loginJ{
 .stext1{
 text-align: center;
   font-family: 'Caveat Brush', cursive;
+  color: #5f9ea0;
 
 }
 
 .stext2{
 text-align: center;
   font-family: 'Caveat Brush', cursive;
+}
+
+#deleteB{
+  background-color: #26C6DA;
+  color: white;
+  font-family: 'Caveat Brush', cursive;
+
 }
 
 #myPJ{
@@ -137,13 +147,13 @@ text-align: center;
 .ui.button#save{
   background-color: #26C6DA;
   font-family: 'Chewy', cursive;
-  color: black;
+  color: white;
 }
 
 .ui.button#submit{
   background-color: #26C6DA;
   font-family: 'Chewy', cursive;
-  color: black;
+  color: white;
 }
 
 
@@ -204,4 +214,9 @@ nav#nav-wrapper{
 
 nav.#userinfo{
   color:#26C6DA;
+}
+
+
+#allPhrases{
+  background-color: #F7DC6F;
 }

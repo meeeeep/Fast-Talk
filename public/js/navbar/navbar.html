@@ -1,6 +1,6 @@
 <nav id="nav-wrapper">
+    <div ng-show="$ctrl.Auth.isLoggedIn()" class="nav-wrapper">
     <a data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-    < hr ng-show="$ctrl.Auth.isLoggedIn()" class="nav-wrapper">
         <a id="userinfo" class="brand-logo right"ng-show="$ctrl.Auth.isLoggedIn()">Signed in as {{$ctrl.Auth.getCurrentUserSync().username}}</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li><a id="1" class="active item1" ui-sref="userslanding">HOME</a></li>
@@ -11,7 +11,7 @@
         <ul class="side-nav" id="mobile-demo">
             <li><a ui-sref="userslanding">HOME</a></li>
             <li><a ui-sref="phraseShow">MY PHRASES</a></li>
-            <li><a ng-click="$ctrl.logoout()">LOGOUT</a></li>
+            <li><a ng-click="$ctrl.logout()">LOGOUT</a></li>
         </ul>
     <script> $(".button-collapse").sideNav();</script>
     </div>

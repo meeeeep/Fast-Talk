@@ -1,7 +1,6 @@
 html
   head
     title FastTalk
-    meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css')
     link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
@@ -10,8 +9,11 @@ html
   body(ng-app ='fastTalk')
     ui-view
     block content
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.js')
     script(src='/js/client.js')
     script(src='/js/auth/authService.js')
     script(src='/js/auth/login/login.component.js')

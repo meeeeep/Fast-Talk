@@ -1,6 +1,6 @@
 console.log('hello from client.js');
 
-const myApp = angular.module('fastTalk', ['ui.router']);
+const myApp = angular.module('fastTalk', ['ui.router', 'ui.materialize']);
 
 myApp.config(function($stateProvider, $urlRouterProvider){
     //if the user goes astray, redirect to /home
